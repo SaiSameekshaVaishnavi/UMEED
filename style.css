@@ -75,7 +75,7 @@
     justify-content: center;
     border: 1px solid #292929;
     height: 40px;
-    width: 100%;
+    width: 85%;
 }
 
 #landing .styled-button::before {
@@ -139,12 +139,11 @@
 
 /*BDC Impo?*/
 #BDC-impo .fields {
-    width: 50vw;
-    min-height: max-content;
-    height: 50vh;
+    width: 55vw;
+    max-height: max-content;
     border-radius: 40px;
-    font-size: max(2.25vh, 1.8vw);
-    padding: 50px;
+    font-size: max(1.75vh, 1.75vw);
+    padding: 2%;
     margin: auto;
     position: relative;
     box-shadow: 0 0 30px black;
@@ -317,6 +316,59 @@
     overflow-y: scroll;
 }
 
+#event .text .btn .button {
+    width: 140px;
+    height: 45px;
+    border-radius: 30em;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 1;
+    cursor: pointer;
+    z-index: 1;
+    background: #ff135a;
+    border: 3px solid black;
+    transition: 0.6s ease-in;
+    z-index: 0;
+}
+
+#event .text .button:hover {
+    background: #fff;
+}
+
+#event .text .button .two {
+    display: none;
+}
+
+#event .text .button::before {
+    content: "";
+    width: 0;
+    height: 50px;
+    border-radius: 30em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #854040, #cb4848, #854040);
+    transition: 0.5s ease;
+    display: block;
+    z-index: -1;
+}
+
+#event .text .button:hover::before {
+    width: 140px;
+    transition: 3s linear;
+}
+
+#event .text .button:hover .one {
+    display: none;
+}
+
+#event .text .button:hover .two {
+    display: inline;
+}
+
 #event .wrap:hover .overlay {
     transform: translateX(-60vmin);
 }
@@ -344,7 +396,6 @@
     background: white;
 }
 
-/* Animations and timing delays */
 #event .animate {
     animation-duration: 0.7s;
     animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
@@ -488,6 +539,15 @@
 /*spons section*/
 #Spons img {
     width: 45vw;
+    height: auto;
+}
+
+@media only screen and (max-width:823px) {
+    #Spons img {
+        margin-top: 2%;
+        width: 50vw;
+        height: auto;
+    }
 }
 
 /*contact section*/
@@ -609,6 +669,8 @@
     justify-content: center;
 }
 
+
+
 #contact .carda svg {
     transform: scale(1);
 }
@@ -649,4 +711,16 @@
     100% {
         transform: scale(1);
     }
+}
+
+@media only screen and (max-width:823px) {
+
+    #contact .carda .social-link2,
+    #contact .carda .social-link3,
+    #contact .carda .social-link4,
+    #contact .carda .social-link5 {
+        width: 30px;
+        height: 30px;
+    }
+
 }
