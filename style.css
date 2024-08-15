@@ -39,7 +39,7 @@
     background-position: center;
 }
 
-#landing p {
+#landing .clip p {
     text-align: center;
     position: absolute;
     bottom: 2vh;
@@ -48,13 +48,13 @@
 }
 
 @media only screen and (max-width:767px) {
-    #landing p {
+    #landing .clip p {
         bottom: 12vh;
     }
 }
 
-@media only screen and (max-width:1050x) {
-    #landing p {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    #landing .clip p {
         bottom: 16vh;
     }
 }
@@ -151,7 +151,6 @@
     text-align: justify;
     background-color: rgb(169, 61, 61);
     box-sizing: border-box;
-
     border: 4px solid #fff;
     animation: borderAnimation 2s infinite;
     transition: transform 1s ease-in-out;
@@ -234,7 +233,6 @@
     height: 80vmin;
     margin: 2rem auto;
     border: 8px solid;
-    /*border colour*/
     transition: 0.3s ease-in-out;
     position: relative;
     overflow: hidden;
@@ -247,7 +245,6 @@
     height: 100%;
     padding: 1rem 0.75rem;
     background: beige;
-    /*starting image colour*/
     transition: 0.4s ease-in-out;
     z-index: 1;
 }
@@ -277,7 +274,6 @@
     background-image: url("./bg.jpg");
     background-size: cover;
     transition: 0.3s ease-in-out;
-    /* border: 1px solid green; */
 }
 
 #event .inset {
@@ -333,6 +329,11 @@
     border: none;
     transition-delay: 0.2s;
     transform: translateX(60vmin);
+    color: white;
+}
+
+#event .wrap:hover .overlay-content p {
+    color: white;
 }
 
 #event .wrap:hover .dots {
@@ -505,11 +506,12 @@
 
 #contact .reach .set svg {
     margin-right: 6%;
+    margin-top: 1.5%;
 }
 
 .set a {
     text-decoration: none;
-    color: black;
+    font-size: max(1.4vh, 1.4vw);
 }
 
 @media only screen and (max-width:600px) {
