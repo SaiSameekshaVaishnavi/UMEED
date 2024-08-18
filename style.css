@@ -177,11 +177,10 @@
     box-sizing: border-box;
     border: 4px solid #fff;
     animation: borderAnimation 2s infinite;
-    transition: transform 1s ease-in-out;
-    cursor: pointer;
     opacity: 0;
     transform: rotate(0deg);
-    transition: opacity 0.2s ease-in-out, transform 1s ease-in-out;
+    transition: transform 1s ease-in-out opacity 0.2s ease-in-out;
+    cursor: pointer;
 }
 
 #BDC-impo .fields p {
