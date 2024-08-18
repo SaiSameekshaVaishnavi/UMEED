@@ -58,14 +58,14 @@
 #landing .clip p {
     text-align: center;
     position: absolute;
-    bottom: 2vh;
+    bottom: 1vh;
     left: 50%;
     transform: translateX(-50%);
 }
 
 @media only screen and (max-width: 767px) {
     #landing .clip p {
-        bottom: 12vh;
+        bottom: 5vh;
     }
     #landing .wiss, #landing .s4s {
         height: 80%;
@@ -75,7 +75,7 @@
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     #landing .clip p {
-        bottom: 16vh;
+        bottom: 5vh;
     }
     #landing .wiss, #landing .s4s {
         height: 60%;
